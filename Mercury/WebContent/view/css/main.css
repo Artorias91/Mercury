@@ -1,0 +1,113 @@
+@font-face {
+   font-family: 'Poiret-one';
+   src: url('../fonts/Poiret-one/PoiretOne-Regular.ttf')
+      format('truetype');
+}
+@font-face {
+   font-family: 'Lato-l';
+   src: url('../fonts/Lato/Lato-Light.ttf')
+      format('truetype');
+}
+@font-face {
+   font-family: 'Lato-bo';
+   src: url('../fonts/Lato/Lato-Bold.ttf')
+      format('truetype');
+}
+@font-face {
+   font-family: 'Lato-bl';
+   src: url('../fonts/Lato/Lato-Black.ttf')
+      format('truetype');
+}
+@font-face {
+   font-family: 'Lato-reg';
+   src: url('../fonts/Lato/Lato-Regular.ttf')
+      format('truetype');
+}
+
+
+
+body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	background-image: url('../img/back.jpg');
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 800px;
+}
+.menu-bar{
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: #fff;
+}
+.element-menu{
+	position: relative;
+	height: 70px;
+	line-height: 70px;
+	color: #1d1d1d;
+}
+.logo{
+	float: left;
+	margin-left: 15px;
+	font-size: 1.2em;
+	font-family: 'Lato-bo'; 
+}
+.login{
+	float: right;
+	margin-right: 15px;
+	font-size: 1.0em;
+	font-family: 'Lato-reg'; 
+	cursor: pointer;
+}
+.login:hover{
+	color: rgba(29, 29, 30, 0.7);
+}
+.container-form{
+	position: absolute;
+	width: 100%;
+	//height: 70px;
+	top: 250px;
+}
+.box-form{
+	position: relative;
+	width: 520px; 
+   	height: 70px;
+   	top: 0px;
+   	margin: 0 auto;
+}
+.input-form{
+   position: relative;
+   width: 500px; 
+   height: 45px;
+   margin: 0 auto;
+   padding: 10px;
+   border: none;
+   font-size: 1.1em;
+   background-color: rgba(255, 255, 255, 0.8);
+   text-decoration: none;
+}
+.setting-button{
+	position: relative;
+	top: 15px;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	background-image: url('../img/setting.png');
+	background-size: 22px 22px;
+}
+.box-spec{
+	display: none;
+	position: relative;
+	width: 520px; 
+   	height: 200px;
+   	background-color: #fff;
+   	top: 50px;
+   	margin: 0 auto;
+}
