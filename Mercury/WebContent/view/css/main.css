@@ -1,3 +1,5 @@
+@import url("profile.css");
+
 @font-face {
    font-family: 'Poiret-one';
    src: url('../fonts/Poiret-one/PoiretOne-Regular.ttf')
@@ -30,15 +32,17 @@ body{
 	position: relative;
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
+	font-size: 20px !important;
 	background-image: url('../img/back.jpg');
+	font-family: 'Lato-reg';
 }
 
-.container{
+.container-2{
 	position: relative;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	top: 80px;
 	min-height: 800px;
 }
 .menu-bar{
@@ -46,6 +50,7 @@ body{
 	width: 100%;
 	height: 70px;
 	background-color: #fff;
+	z-index: 101;
 }
 .element-menu{
 	position: relative;
@@ -62,13 +67,110 @@ body{
 .login{
 	float: right;
 	margin-right: 15px;
-	font-size: 1.0em;
-	font-family: 'Lato-reg'; 
+	font-size: 1.0em; 
 	cursor: pointer;
 }
 .login:hover{
 	color: rgba(29, 29, 30, 0.7);
 }
+.user-menu{
+	float: right;
+	margin-right: 15px;
+	font-size: 1.0em; 
+	cursor: pointer;
+	width: 250px;
+	height: 50px;
+	top: 10px;
+}
+.user-menu-img{
+	position: relative;
+	float: right;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #1d1d1d;
+}
+.user-menu-name{
+	position: relative;
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	color: #1d1d1d;
+	margin-right: 10px;
+}
+.menu-drop{
+	position: fixed;
+	width: 280px;
+	min-height: 335px;
+	right: 0;
+	top: 80px;
+	background-color: #fff;
+	z-index: 101;
+}
+.box-login-form{
+	position: relative;
+	width: 250px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.box-login-text{
+	position: relative;
+	width: 250px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 60px;
+}
+.text-12{
+	font-size: 1.2em;
+}
+.text-08{
+	font-size: 0.8em;
+}
+.login-form{
+	font-size: 0.9em !important;
+	width: 250px; 
+	height: 40px;
+	border: 1px #929292 solid !important;
+}
+.button-custom{
+	height: 40px;
+	font-family: 'Poiret-one';
+	border: none;
+	color: #fff;
+}
+.button-custom:hover{
+	opacity: 0.9;
+}
+.button-submit{
+	width: 100px;
+	background-color: #ff3333;
+}
+.button-registration{
+	width: 250px;
+	font-family: 'Poiret-one';
+	background-color: #ff3333;
+}
+.box-menu{
+	cursor: pointer;
+	position: relative;
+	width: 260px;
+	height: 50px;
+	margin: 10px;
+	color: #1d1d1d;
+}
+.box-menu:hover{
+	background-color: #1d1d1d;
+	color: #fff;
+}
+
+.box-menu-text{
+	height: 50px;
+	line-height: 50px;
+	margin-left: 10px;
+}
+
+
 .container-form{
 	position: absolute;
 	width: 100%;
@@ -83,16 +185,20 @@ body{
    	margin: 0 auto;
 }
 .input-form{
-   position: relative;
-   width: 500px; 
-   height: 45px;
-   margin: 0 auto;
-   padding: 10px;
-   border: none;
-   font-size: 1.1em;
-   background-color: rgba(255, 255, 255, 0.8);
-   text-decoration: none;
+	position: relative;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	font-size: 1.1em;
+	font-family: 'Poiret-one';
+	background-color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
 }
+.search-form{
+	width: 500px; 
+	height: 60px;
+}
+
 .setting-button{
 	position: relative;
 	top: 15px;
@@ -107,7 +213,18 @@ body{
 	position: relative;
 	width: 520px; 
    	height: 200px;
-   	background-color: #fff;
+   	//background-color: #fff;
    	top: 50px;
    	margin: 0 auto;
+}
+.search-button{
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	left: 452px;
+	top: 12px;
+	//background-color: #000;
+	cursor: pointer;
+	background-image: url('../img/search.png');
+	background-size: 36px 36px;
 }
