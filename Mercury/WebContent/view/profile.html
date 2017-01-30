@@ -1,29 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<!--<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" href="view/css/main.css">
-<link rel="stylesheet" href="view/css/bootstrap.min.css">
-<link rel="stylesheet" href="view/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="view/js/main.js"></script>
-
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-<script type="text/javascript">
-$( function() {
-	$('#calendario').datepicker({
-
-	});  	
-} );
-</script>
-
-<title>Mercury</title>
-
-
+<script src="js/main.js"></script>
+<title>Insert title here</title>
 </head>
 <body>
 
@@ -72,44 +58,34 @@ $( function() {
 		</div>
 	</div>
 
-
 	<div class="container-2">
 	
-		<div class="container-form">
-			<form action="" method="">
-				<div class="box-form">
-					<input class="input-form search-form" placeholder="Ricerca evento..."></input>
-					<div class="search-button"></div>
-					<div id="setting-button" class="setting-button"></div>
-				</div>
-			</form>
-
-			<form action="" method="">
-				<div class="box-spec">
-					<div class="box-form">
-						<div class="text-form">Ricerca per localita'</div>
-						<input class="input-form spec-form" placeholder="Regione..."></input>
-						<input class="input-form spec-form" placeholder="Provincia..."></input>
-						<input class="input-form spec-form" placeholder="Comune..."></input>
-					</div>
-					<div class="box-form">
-						<div class="text-form">Ricerca per tipologia</div>
-						<select class="box-select">
-							<option class="box-option" value="film">Film</option>
-							<option value="concerto">Concerto</option>
-							<option value="mercedes">Teatro</option>
-							<option value="mostra">Mostra</option>
-							<option value="sagra">Sagra</option>
-						</select>
-					</div>
-					<div class="box-form" >
-						<div class="text-form">Ricerca per data</div>
-						<input class="input-form date-form" id="calendario" placeholder="Mostra calendario"></input>
-					</div>
-				</div>
-			</form>
-
+		<div class="user-img"></div>
+		<div class="user-name">Fabrizio S.P.A.</div>
+		<div class="user-description">
+			La nostra societa nasce a Cagliari tra i vicoli del quartiere marina in un piovoso martedi' di Ottobre del 2015, l'alcol aveva invaso tutti i vasi sanguigni e la speranza di sopravvivere a quella serata era data 
+			a meno della vittoria del Real Madrid col Pescara!
 		</div>
+		<div class="title">EVENTI IN PROGRAMMA</div>
+		<div class="box-events">
+			<div class="box-event">
+				<div class="event-img"></div>
+				<div class="event-description">Concerto CSP caskanolepiramidi</div>
+			</div>
+			<div class="box-event">
+				<div class="event-img"></div>
+				<div class="event-description">Sagra della vernaccia</div>
+			</div>
+			<div class="box-event">
+				<div class="event-img"></div>
+				<div class="event-description">Sfilata di carnevale</div>
+			</div>
+			<div class="box-event">
+				<div class="event-img"></div>
+				<div class="event-description">Gara di scorregge con la favata!</div>
+			</div>
+		</div>
+
 	</div>
 
 </body>

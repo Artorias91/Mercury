@@ -1,13 +1,10 @@
 $(document).ready(function(){
 
-	
-	console.log("qui");
-
-
-	
-	
     $("#setting-button").click(function(){
         $(".box-spec").toggle();
+        $('html,body').animate({
+        	scrollTop: $(".box-spec").offset().top},'slow'
+        );
     });
 
 

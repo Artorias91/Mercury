@@ -1,4 +1,5 @@
 @import url("profile.css");
+@import url("form.css");
 
 @font-face {
    font-family: 'Poiret-one';
@@ -35,6 +36,19 @@ body{
 	font-size: 20px !important;
 	background-image: url('../img/back.jpg');
 	font-family: 'Lato-reg';
+	color: #1d1d1d;
+}
+
+a{
+	text-decoration: none !important;
+}
+input:focus, select:focus, textarea:focus, option:focus{
+	outline: none !important;
+}
+
+option:hover{
+	background-color: #ff3333 !important;
+	color: #fff !important;
 }
 
 .container-2{
@@ -56,13 +70,13 @@ body{
 	position: relative;
 	height: 70px;
 	line-height: 70px;
-	color: #1d1d1d;
 }
 .logo{
 	float: left;
 	margin-left: 15px;
 	font-size: 1.2em;
 	font-family: 'Lato-bo'; 
+	color: #ff3333;
 }
 .login{
 	float: right;
@@ -89,6 +103,9 @@ body{
 	height: 50px;
 	border-radius: 50%;
 	background-color: #1d1d1d;
+	border: 2px solid #1d1d1d;
+	background-image: url('../img/user.jpg');
+	background-size: cover;
 }
 .user-menu-name{
 	position: relative;
@@ -160,7 +177,7 @@ body{
 	color: #1d1d1d;
 }
 .box-menu:hover{
-	background-color: #1d1d1d;
+	background-color: #ff3333;
 	color: #fff;
 }
 
@@ -168,6 +185,10 @@ body{
 	height: 50px;
 	line-height: 50px;
 	margin-left: 10px;
+	color: #1d1d1d !important;
+}
+.box-menu-text:hover{
+	color: #fff!important;
 }
 
 
@@ -175,14 +196,15 @@ body{
 	position: absolute;
 	width: 100%;
 	//height: 70px;
-	top: 250px;
+	top: 100px;
 }
 .box-form{
 	position: relative;
-	width: 520px; 
-   	height: 70px;
+	width: 620px; 
+   	height: 100px;
    	top: 0px;
    	margin: 0 auto;
+   	margin-bottom: 30px;
 }
 .input-form{
 	position: relative;
@@ -191,12 +213,17 @@ body{
 	border: none;
 	font-size: 1.1em;
 	font-family: 'Poiret-one';
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.9);
 	text-decoration: none;
 }
 .search-form{
-	width: 500px; 
+	width: 610px; 
 	height: 60px;
+}
+.spec-form{
+	width: 200px; 
+	height: 60px;
+	margin: 0 !important;
 }
 
 .setting-button{
@@ -211,29 +238,55 @@ body{
 .box-spec{
 	display: none;
 	position: relative;
-	width: 520px; 
-   	height: 200px;
-   	//background-color: #fff;
-   	top: 50px;
+	width: 620px; 
+   	height: 500px;
+   	top: 0px;
    	margin: 0 auto;
 }
 .search-button{
 	position: absolute;
 	width: 36px;
 	height: 36px;
-	left: 452px;
+	left: 552px;
 	top: 12px;
-	//background-color: #000;
 	cursor: pointer;
 	background-image: url('../img/search.png');
 	background-size: 36px 36px;
 }
-
-.box-form > input {
-	cursor: pointer;
+.text-form{
+	position: relative;
+	width: 620px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+	color: #fff;
+}
+.box-select{
+	width: 200px;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.9);
+	font-family: 'Poiret-one';
 }
 
 
 div#ui-datepicker-div {
-    font-size: 15px;
+	font-family: 'Poiret-one' !important;
+    font-size: 0.8em;
+    border-radius: 0px;
+    //background-color: rgba(255, 255, 255, 0.9);
+}
+/*
+.ui-widget-header {
+    border:none !important;
+    background: #ff3333 !important;
+    color: #fff !important;
+}*/
+
+#ui-datepicker-div{
+	top: 610px !important;
+}
+.date-form{
+	width: 272px;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.9);
 }
