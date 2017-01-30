@@ -228,3 +228,12 @@ body{
 	background-image: url('../img/search.png');
 	background-size: 36px 36px;
 }
+
+.box-form > input {
+	cursor: pointer;
+}
+
+
+div#ui-datepicker-div {
+    font-size: 15px;
+}

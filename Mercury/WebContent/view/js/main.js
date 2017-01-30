@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+	
+	console.log("qui");
+
+
+	
+	
     $("#setting-button").click(function(){
         $(".box-spec").toggle();
     });
